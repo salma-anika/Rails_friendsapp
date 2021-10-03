@@ -16,6 +16,9 @@
   </head>
   <body>
   <%= render  'home/header' %>
+  <% if notice %>
+  <%= render 'home/alert'%>
+  <%end%>
     <%= yield %>
 
     <!-- Optional JavaScript; choose one of the two! -->
